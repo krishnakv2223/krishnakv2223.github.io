@@ -33,10 +33,31 @@
       }
     }
 
+    .navbar-nav {
+      flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    }
+
     .navbar-nav .nav-link {
       font-size: 1.25rem;
       font-weight: 500;
       margin-right: 15px;
+    }
+
+    /* Media query to adjust layout for smaller screens */
+    @media (max-width: 768px) {
+      .navbar-nav {
+        justify-content: center; /* Center the nav items on smaller screens */
+      }
+
+      .navbar-brand {
+        display: block; /* Ensure the brand appears on its own line if needed */
+        margin-bottom: 10px;
+      }
+
+      .navbar-nav .nav-link {
+        margin-right: 10px;
+        margin-bottom: 5px; /* Add space between links on wrap */
+      }
     }
 
     section {
@@ -134,4 +155,3 @@
 </body>
 
 </html>
-
