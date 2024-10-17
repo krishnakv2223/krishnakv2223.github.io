@@ -5,7 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TinDog</title>
-  <link rel="stylesheet" href="solution.css">
 
   <!-- Bootstrap CSS -->
   <link 
@@ -33,35 +32,54 @@
       }
     }
 
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
     .navbar-nav {
-      flex-wrap: wrap; /* Allow items to wrap onto the next line */
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
     .navbar-nav .nav-link {
       font-size: 1.25rem;
       font-weight: 500;
-      margin-right: 15px;
+      margin: 5px 10px;
     }
 
-    /* Media query to adjust layout for smaller screens */
+    /* Media Query: Adjust layout on smaller screens */
     @media (max-width: 768px) {
-      .navbar-nav {
-        justify-content: center; /* Center the nav items on smaller screens */
+      .navbar {
+        flex-direction: column; /* Stack brand and links vertically */
+        align-items: center;
       }
 
       .navbar-brand {
-        display: block; /* Ensure the brand appears on its own line if needed */
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        text-align: center;
       }
 
-      .navbar-nav .nav-link {
-        margin-right: 10px;
-        margin-bottom: 5px; /* Add space between links on wrap */
+      .navbar-nav {
+        font-size: 1rem;
       }
-    }
 
-    section {
-      padding: 60px 0;
+      /* Wrap the items neatly into two lines */
+      .navbar-nav li:nth-child(1),
+      .navbar-nav li:nth-child(2),
+      .navbar-nav li:nth-child(3) {
+        display: inline-block;
+        width: 33%;
+        text-align: center;
+      }
+
+      .navbar-nav li:nth-child(4),
+      .navbar-nav li:nth-child(5) {
+        display: inline-block;
+        width: 50%;
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -72,7 +90,7 @@
   <nav class="navbar navbar-expand bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand text-white" href="#">KRISHNA KARTHIK PENMETSA</a>
-      <ul class="navbar-nav ms-auto">
+      <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link text-white" href="#home">Home</a>
         </li>
@@ -92,7 +110,7 @@
     </div>
   </nav>
 
-  <!-- Home Section -->
+  <!-- Sections -->
   <section id="home" class="gradient-background">
     <div class="container">
       <h1>Home</h1>
@@ -102,42 +120,33 @@
     </div>
   </section>
 
-  <!-- Features Section -->
   <section id="features" class="gradient-background">
     <div class="container">
       <h1>Features</h1>
-      <p>This webpage showcases several key features. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Curabitur viverra, lacus vel scelerisque gravida, arcu velit interdum mi, a varius enim ligula et ligula.
-        Proin venenatis ipsum et augue ullamcorper malesuada.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra, lacus vel scelerisque gravida,
+        arcu velit interdum mi, a varius enim ligula et ligula. Proin venenatis ipsum et augue ullamcorper malesuada.</p>
     </div>
   </section>
 
-  <!-- Pricing Section -->
   <section id="pricing" class="gradient-background">
     <div class="container">
       <h1>Pricing</h1>
-      <p>Here you will find the pricing information. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Cras sollicitudin, nisi sed volutpat viverra, mauris est pulvinar enim, id consectetur risus lorem nec ex.
-        In quis justo vitae tortor tincidunt interdum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, nisi sed volutpat viverra, mauris est pulvinar enim.</p>
     </div>
   </section>
 
-  <!-- FAQs Section -->
   <section id="faqs" class="gradient-background">
     <div class="container">
       <h1>FAQs</h1>
-      <p>Got questions? Check out the FAQs below! Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Vestibulum fermentum tortor in libero accumsan, eget vehicula risus hendrerit. Proin in dui vel augue congue
-        vestibulum a eget lorem.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fermentum tortor in libero accumsan,
+        eget vehicula risus hendrerit. Proin in dui vel augue congue vestibulum a eget lorem.</p>
     </div>
   </section>
 
-  <!-- About Section -->
   <section id="about" class="gradient-background">
     <div class="container">
       <h1>About</h1>
-      <p>Learn more about me. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis feugiat condimentum
-        arcu, nec ultricies magna pharetra a. Sed sit amet elit sed nisl dictum vehicula.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis feugiat condimentum arcu, nec ultricies magna pharetra a.</p>
     </div>
   </section>
 
@@ -146,7 +155,7 @@
     <p>© Krishna</p>
   </footer>
 
-  <!-- Bootstrap JS Bundle (with Popper) -->
+  <!-- Bootstrap JS -->
   <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoJgKwwp1rZbhxOVfTuvsZ5g5E9AYxChGeEfhcvLG5t8ANM" 
