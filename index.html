@@ -8,7 +8,7 @@
   <link href="solution.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-  
+
   <style>
     .gradient-background {
       background: linear-gradient(300deg, #00bfff, #ffffff, #565656);
@@ -20,9 +20,11 @@
       0% {
         background-position: 0% 50%;
       }
+
       50% {
         background-position: 100% 50%;
       }
+
       100% {
         background-position: 0% 50%;
       }
@@ -38,81 +40,129 @@
       border-radius: 50%;
       height: 100px;
     }
+
+    .navbar-nav .nav-link {
+      font-size: 1.25rem;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 60px 0;
+    }
   </style>
 </head>
 
 <body>
 
-
-  <!-- Title -->
-  <section id="title" class="gradient-background">
-
-    <div class="container col-xxl-8 px-4 pt-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
-        <div class="col-10 col-sm-8 col-lg-6">
-          
-        </div>
-        <div class="col-lg-6">
-          <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">KRISHNA KARTHIK PENMETSA</h1>
-
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            
-          </div>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">KRISHNA KARTHIK PENMETSA</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faqs">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </section>
-  <section id="contact" class="gradient-background" style="text-align: center;">
-    <br><br><br><br>HI I AM KRISHNA KARTHIK PENMETSA AND THIS IS MY WEBPAGE
-  </section>
-  <!-- Footer -->
-  <section id="contact" class="gradient-background">
-    <div class="container ">
-      <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 mt-5 border-top">
-        <div class="col mb-3">
+  </nav>
 
-          <p class="text-body-secondary">© krishna</p>
-        </div>
-
-        <div class="col mb-3">
-
-        </div>
-
-        <div class="col mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-          </ul>
-        </div>
-
-        <div class="col mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-          </ul>
-        </div>
-
-        <div class="col mb-3">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-          </ul>
-        </div>
-      </footer>
+  <!-- Home Section -->
+  <section id="home" class="gradient-background">
+    <div class="container">
+      <h1>Home</h1>
+      <p>
+        Welcome to my personal webpage! This site is a small corner of the internet where I share who I am and
+        what I do. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at orci nec neque dapibus
+        consectetur. Vivamus placerat libero eget quam fermentum, et aliquet orci facilisis. Duis convallis nisi
+        id eros pulvinar, nec laoreet eros interdum. Pellentesque sit amet nulla at libero vulputate facilisis
+        eu ut magna. Nulla facilisi. Ut condimentum sapien ac felis iaculis, eget efficitur odio vehicula.
+      </p>
     </div>
   </section>
+
+  <!-- Features Section -->
+  <section id="features" class="gradient-background">
+    <div class="container">
+      <h1>Features</h1>
+      <p>
+        This webpage showcases several key features. It leverages Bootstrap for responsiveness and CSS animations
+        for visual appeal. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur viverra, lacus vel
+        scelerisque gravida, arcu velit interdum mi, a varius enim ligula et ligula. Proin venenatis ipsum et
+        augue ullamcorper malesuada. Nam ac tincidunt orci. Aliquam tincidunt tortor non lacus fringilla, in
+        dictum erat faucibus. Suspendisse et nibh est. Integer volutpat lobortis velit in blandit. Nulla vehicula
+        magna id ante elementum tristique. Praesent non risus enim.
+      </p>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section id="pricing" class="gradient-background">
+    <div class="container">
+      <h1>Pricing</h1>
+      <p>
+        Here you will find the pricing information for the products and services I offer. Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit. Cras sollicitudin, nisi sed volutpat viverra, mauris est pulvinar enim,
+        id consectetur risus lorem nec ex. In quis justo vitae tortor tincidunt interdum. Ut nec tortor eget
+        libero volutpat vehicula. Maecenas ullamcorper leo eu leo tincidunt, vel tempor erat tempor. Nullam
+        efficitur nulla a lacinia dapibus. Cras facilisis ante in purus bibendum, a molestie erat malesuada.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQs Section -->
+  <section id="faqs" class="gradient-background">
+    <div class="container">
+      <h1>FAQs</h1>
+      <p>
+        Got questions? Check out the frequently asked questions below! Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Vestibulum fermentum tortor in libero accumsan, eget vehicula risus hendrerit. Proin in
+        dui vel augue congue vestibulum a eget lorem. Ut consectetur velit sed mi congue, quis ultrices libero
+        luctus. Suspendisse et neque a turpis aliquet fermentum. Integer auctor magna eget nulla dignissim, ac
+        lobortis risus blandit. Donec dapibus mauris ut lacus feugiat, quis bibendum nulla volutpat.
+      </p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="gradient-background">
+    <div class="container">
+      <h1>About</h1>
+      <p>
+        Learn more about me and what I do. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis feugiat
+        condimentum arcu, nec ultricies magna pharetra a. Sed sit amet elit sed nisl dictum vehicula. Integer
+        volutpat purus sit amet fermentum blandit. Curabitur non sapien convallis, congue sapien at, iaculis
+        sapien. Vivamus consectetur metus eu tortor ornare, non malesuada eros varius. In nec varius purus. Etiam
+        at dolor non eros auctor scelerisque. Nulla sit amet metus sed elit interdum rutrum.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="gradient-background text-center py-4">
+    <p>© Krishna</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoJgKwwp1rZbhxOVfTuvsZ5g5E9AYxChGeEfhcvLG5t8ANM" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
