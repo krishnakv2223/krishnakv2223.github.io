@@ -47,10 +47,18 @@
       color: white;
     }
     .navbar-brand:hover {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
-      color: white;
-    }
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Disable hover effect on smaller screens */
+@media (max-width: 768px) {
+  .navbar-brand:hover {
+    font-size: 1.5rem; /* Keep original size on smaller screens */
+    color: white;
+  }
+}
     /* Keep links horizontally aligned and responsive */
     .navbar-nav {
       display: flex;
